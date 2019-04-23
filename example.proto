@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package example;
+
+service ExampleService { 
+    rpc SayHello(HelloRequest) returns (HelloResponse); 
+    rpc DoAddition(NumberRequest) returns (NumberResponse); 
+    rpc DoSubtraction(NumberRequest) returns (NumberResponse); 
+}
+
+message HelloRequest { 
+    string greeting = 1; 
+}
+
+message HelloResponse { 
+    string reply = 1; 
+}
+
+message NumberRequest { 
+    int32 first_number = 1; 
+    int32 second_number = 2; 
+}
+
+message NumberResponse { 
+    int32 result = 1; 
+}
