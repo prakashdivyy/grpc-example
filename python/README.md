@@ -11,3 +11,7 @@ python generate_pb.py
 
 # run client
 python client.py
+
+# run server
+python server.py
+```
